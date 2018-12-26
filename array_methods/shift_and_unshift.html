@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shift() and unshift() method in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h2>unshift() adds a new element to an array at the begining and shift() removes an element in an array from begining.</h2>
+    <p id="demo11"></p>
+    <p id="demo22"></p>
+    <p id="demo33"></p>
+    <p id="demo44"></p>
+    <script>
+        //shift()
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo11").innerHTML = fruits;
+        fruits.shift();
+        document.getElementById("demo22").innerHTML = fruits;
+        //unshift()
+        var fruitssss = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo33").innerHTML = fruitssss;
+        fruitssss.unshift("Kiwi here");
+        document.getElementById("demo44").innerHTML = fruitssss;
+    </script>
+</body>
+
+</html>

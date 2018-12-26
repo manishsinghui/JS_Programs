@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prototype in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        function Hi(firstName, lastName) {
+            this.firstName = firstName,
+                this.lastName = lastName
+        }
+        Hi.prototype.age = 22;
+        Hi.prototype.salary = 75000;
+        Hi.prototype.shows = function() {
+            return 'firstName =' + this.firstName + ', lastName =' + this.lastName + ', age =' + this.age + ', salary =' + this.salary;
+        }
+        var ob = new Hi("Manish", "Singh");
+        document.write(ob.shows());
+    </script>
+</body>
+
+</html>

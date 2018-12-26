@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <title> SetTimeout </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+</head>
+<body>
+   <script>
+      // First Program
+      /*var a = {
+         name: 'Manish',
+         getName : function() {
+            return this.name;
+         }
+      }
+      var b = {
+         name: 'Avinash',
+         getName : function() {
+            return this.name;
+         }
+      }
+
+      var ob = b.getName.call(a);
+      console.log(ob);
+      */
+
+      // Second Program
+      /*
+        for(var i=0; i<=5; i++) {
+         setTimeout(function() {
+            console.log(i);
+         }, 0)
+      }
+      */
+
+      // third Program
+      /*var a = [3,5,7];
+      b = a;
+      b.length = 0;
+      console.log(a, b);
+      */
+
+
+      // Fourth Program
+      /*var a = [3,5,7];
+      b = a.slice();
+      b.length = 0;
+      console.log(a, b);
+      */
+      
+
+   // Sixth Program
+   /*a();
+   function a() {
+      var a = 1;
+      console.log(a);
+   }
+   a();
+
+   function a() {
+      var b = 2;
+      console.log(b);
+   }
+   a();
+
+   function a() {
+      var c = 3;
+      console.log(c);
+   }
+   a();
+   */
+
+   // Seventh Program
+   /*a();  // generates error
+   var a = function() {
+      var a = 1;
+      console.log(a);
+   }
+   a();
+
+   var a = function() {
+      var b = 2;
+      console.log(b);
+   }
+   a();
+
+   var a = function() {
+      var c = 3;
+      console.log(c);
+   }
+   a();
+   */
+
+   // Eighth Program
+   /*var a = 10;
+   function A() {
+      a = 1;
+      console.log(a);
+      var a;
+      console.log(a);
+   }
+   A();
+   */
+
+   // Ninth Program
+   /*
+   function A() {
+      function B() {
+         alert(1);
+      }
+      B();
+      A();
+      A = function() {
+         alert(2);
+      }
+   }
+   A();
+   A();
+   */
+
+   // 10nth Program
+   /*
+   function A() {
+      function B() {
+         alert(1);
+      }
+      B();
+      A = function() {
+         alert(2);
+      }
+      A();
+   }
+   A();
+   A();
+   */
+
+// 11nth Program
+/*
+   function arr() {
+        var arrays = [];
+        for(var i = 0; i < 3; i++){
+            arrays.push(function() {
+                console.log(i);
+            });
+        }
+        return arrays;
+   }
+    var x = arr();
+    x[0]();
+    x[1]();
+    x[2]();
+/*
+
+// 12nth Program
+/*
+function arr() {
+        var arrays = [];
+        for(var i = 0; i < 3; i++){  
+            //let j = i;          
+            arrays.push(function() {
+                let j = i;
+                console.log(j);
+            });
+        }
+        return arrays;
+   }
+    var x = arr();
+    x[0]();
+    x[1]();
+    x[2]();
+*/
+
+// 13nth Program
+/*
+    var names = ["Mike","Matt","Nancy","Adam","Jenny","Nancy","Carl"];
+    var uniqueNames = [];
+    $.each(names, function(i, el){
+        if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+    }); 
+    console.log(uniqueNames);
+*/
+
+
+// 14nth Program
+/*
+    var fruits = ["a", "b", "c", "d"];
+    var a = fruits.indexOf("e");
+    alert(a);
+*/
+
+// 15nth Program
+// for(var i = 1; i <= 10; i++) {
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 1);
+// }
+
+
+// 16nth Program
+/*
+var fruits = ["a", "b", "c", "d"];
+fruits.forEach(function(i) {
+    console.log(i);
+});
+*/
+
+// 17nth Program
+/*
+console.log([] + []);            // blank string
+*/
+
+// 18nth Program
+/*
+console.log({} + []);         // object object
+*/
+
+// 19nth Program
+/*
+function a() {
+   return "hello";
+}
+const sentence = a `hi`;
+console.log(sentence);        // hello
+*/
+
+// 20th Program
+/*
+function y() {
+   console.log(this.length);
+}
+var x = {
+   length: 5,
+  method: function(y) {
+   arguments[0]();
+  }
+};
+x.method(y, 1);
+*/
+
+// 21st Program
+/*
+const x = 'constructor';
+console.log(x[x](01));
+*/
+
+// 22nd Program
+// Find greatest number
+/*
+var arr = [3, 55, 355, -66, 0, 1, -5555];
+var find = -Infinity;
+for(var i = 0; i < arr.length; i++) {
+    if(arr[i] > find) {
+        find = arr[i];
+    }
+}
+console.log(find);
+*/
+
+// 23rd Program
+// Find Least number
+/*
+var arr = [3, 55, 355, -66, 0, 1, -5555];
+var find = Infinity;
+for(var i = 0; i < arr.length; i++) {
+    if(arr[i] < find) {
+        find = arr[i];
+    }
+}
+console.log(find);
+*/
+
+// 24th Program
+// Sort this array
+/*
+var arr = [3, 55, 355, -66, 0, 1, -5555];
+arr.sort(function(a,b) {
+    return a-b;
+});
+console.log(arr);
+*/
+
+// 25th Program
+// Remove repeatated value in an array
+/*
+var arr = [3, 55, 355, -66, 0, 1, -5555, -5555, 55, 2, 4, -66];
+var obj = {};
+for(var i = 0; i < arr.length; i++) {
+    obj[arr[i]] = "manish";
+}
+var newArr = [];
+for(var nw in obj) {
+    newArr.push(Number(nw));    
+}
+console.log(newArr);
+*/
+
+// 26th Program
+// Remove repeatated value in an array
+
+/*var arr = [3, 55, 355, -66, 0, 1, -5555, -5555, 55, 2, 4, -66];
+var obj = {};
+for(var i = 0; i < arr.length; i++) {
+    obj[arr[i]] = "manish";
+}
+var newArr = [];
+for(var nw in obj) {
+    // newArr.push(Number(nw));
+    newArr.push(obj[nw]);
+}
+console.log(newArr);
+*/
+
+// 27th Program
+/*
+var obj = 
+    {
+        name:"Maniah",
+        age:29,
+        address:"Ghaziabad",
+        fullAddress:{
+            state:   "UP",
+            country: "India"
+        }
+    };
+for(var obj1 in obj) {
+    console.log(obj[obj1]);
+}
+*/
+
+// 28th Program
+// Print * by document.write
+/*
+    for(var i = 1; i <= 5; i++) {
+      for(var j = 0; j < i; j++) {
+         document.write("* ");
+      }
+      document.write("<br>");
+   }
+*/
+
+// 29th Program
+// Print * by console.log
+/*
+    var str = "", br;
+   for(var i = 1; i <= 5; i++) {
+      for(var j = 0; j < i; j++) {
+         str += "* ";
+      }
+      str += "\n";
+   }
+   console.log(str);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>

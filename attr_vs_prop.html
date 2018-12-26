@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prototype in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" value="Before change" id="textID" />
+
+    </form>
+
+    <script>
+        $('#textID').change(function() {
+            console.log('attr(): ' + $(this).attr('value')); // old value
+            console.log('prop(): ' + $(this).prop('value')); // new value
+        });
+    </script>
+</body>
+
+</html>

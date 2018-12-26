@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inheritence in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        var Employee = function(name) {
+            this.name = name
+        }
+        Employee.prototype.getName = function() {
+            return this.name;
+        }
+        var PermanentEmployee = function(annualSalary) {
+            this.annualSalary = annualSalary
+        }
+        PermanentEmployee.prototype.getSalary = function() {
+            return this.annualSalary;
+        }
+
+        var employee = new Employee('Manish');
+        PermanentEmployee.prototype = employee; // Here id Inheritence
+        var pe = new PermanentEmployee(75000);
+        // document.write('Name is =' + pe.getName() + ', permanentSalary =' + pe.getSalary());
+        document.write('Name is ' + pe.getName());
+    </script>
+</body>
+
+</html>

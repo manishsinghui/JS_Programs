@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Closure in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <input type="button" value="Count" onclick="alert(clickCount());">
+    <script>
+        var clickCount = (function() {
+            var count = 0;
+            return function() {
+                return ++count;
+            }
+        })();
+    </script>
+</body>
+
+</html>

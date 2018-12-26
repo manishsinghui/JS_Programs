@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Remove duplicate value in an array in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        var arr = ["Manish", "Avinash", "Veeresh", "Manish", "Veeresh", "Vidya"];
+        var ob = {};
+        for (var i = 0; i < arr.length; i++) {
+            ob[arr[i]] = "Manish"; // Use all values of array as object key because key of an object is always unique (non-repeated).
+        }
+        var newArr = [];
+        for (var key in ob) {
+            newArr.push(key); // Now passing object key in a new array which is non-repeated because of object key is unique.
+        }
+        console.log(newArr);
+    </script>
+</body>
+
+</html>

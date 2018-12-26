@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>replace methods in javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        var str = 'Please locate where "locate" occurs!';
+        var newStr = str.replace("locate", "point"); // replace onlt first occurence.
+        var newSt22 = str.replace(/locate/g, "point"); // replace all repeated string.
+        console.log(newStr);
+        console.log(newSt22);
+    </script>
+</body>
+
+</html>
